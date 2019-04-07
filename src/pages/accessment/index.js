@@ -1,8 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { Button, Modal, Table } from 'antd';
+// import writeJsonFile from 'write-json-file';
+
 import './index.css';
-import Form from "../../components/Form";
-import TopHeader from "../../components/TopHeader";
-import {Button, Modal, Table} from "antd";
+
+import Form from '../../components/Form';
+import TopHeader from '../../components/TopHeader';
 
 const questions = [
   ['当别人遇到困难的时候，我特别愿意去帮助他们。', '当我看到一个东西，或者遇见一些事情，我特别想刨根问底，探究东西背后的运作或工作原理，或是事情发生的原因。'],
@@ -388,9 +391,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selects: Array(questions.length).fill(0),
+      selects: Array(questions.length).fill(null),
       visible: false,
-      lack_question_idx: [],
       scope_list: [],
     };
   }
@@ -429,7 +431,6 @@ export default class App extends Component {
   }
 
   get_result() {
-    // todo: 生成结果
     const {selects} = this.state;
 
     let check_mode = false;
@@ -470,16 +471,32 @@ export default class App extends Component {
 
     }
 
-    this.setState({lack_question_idx, scope_list});
+    if (lack_question_idx.length) {
+
+      // 若发现还有没有做完的题目，则报错
+      Modal.error({
+        title: '请完成所有的题目',
+        content: (
+          lack_question_idx.map((value, idx) =>
+            (<span key={idx} style={{
+              backgroundColor: '#212121',
+              color: '#fff',
+              marginRight: '10px',
+            }}>{value}</span>))
+        ),
+      })
+
+    } else {
+
+      // 仅在全部题目都完成的情况下，才显示 Modal
+      this.setState({
+        scope_list,
+        visible: true
+      });
+
+    }
 
   }
-
-  showModal = () => {
-    this.get_result();
-    this.setState({
-      visible: true,
-    });
-  };
 
   handleOk = (e) => {
     this.setState({
@@ -494,8 +511,6 @@ export default class App extends Component {
   };
 
   showResult() {
-    if (this.state.lack_question_idx.length) return null;
-
     const data = this.state.scope_list.map(
       (val, idx) => ({
         name: talents[idx],
@@ -538,27 +553,18 @@ export default class App extends Component {
   }
 
   render = () => (
-    <TopHeader title="公益人优势测评" subTitle="寻找你的优势领域">
+    <TopHeader title="公益人优势测评 v.1.3.0" subTitle="寻找你的优势领域">
       <div className="App">
         <Form questions={this.gen_question_data()} onChange={this.onChange.bind(this)}/>
-        <Button type="primary" onClick={this.showModal} style={{margin: "50px"}}>
+        <Button type="primary" onClick={this.get_result.bind(this)} style={{margin: "50px"}}>
           提交报告 生成测试结果
         </Button>
         <Modal
-          title={this.state.lack_question_idx.length ? "以下题目尚未填写" : "评测报告"}
+          title="评测报告"
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-
-          {
-            this.state.lack_question_idx.map((value, idx) =>
-              (<span key={idx} style={{
-                backgroundColor: '#212121',
-                color: '#fff',
-                marginRight: '10px'
-              }}>{value}</span>))
-          }
 
           {this.showResult()}
 
