@@ -1,4 +1,6 @@
 import React from 'react';
+import router from 'umi/router';
+
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper' },
   page: { className: 'home-page' },
@@ -26,7 +28,11 @@ export const Banner00DataSource = {
     className: 'banner0-content',
     children: '漫步人生公益人天赋测试问卷',
   },
-  button: { className: 'banner0-button', children: '开始测评' },
+  button: {
+    className: 'banner0-button',
+    children: '开始测评',
+    onClick: () => router.push('/accessment/')
+  },
 };
 export const Content00DataSource = {
   wrapper: { className: 'home-page-wrapper content0-wrapper' },
