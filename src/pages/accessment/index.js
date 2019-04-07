@@ -516,7 +516,7 @@ export default class App extends Component {
         dataIndex: 'topic',
         sorter: (a, b) => a.belong - b.belong,
         filters: topic.map((value, idx) => ({text: value, value: idx})),
-        onFilter: (value, record) => record.belong === 0,
+        onFilter: (value, record) => record.belong === value,
       },
       {
         title: '优势',
