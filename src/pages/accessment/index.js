@@ -197,8 +197,6 @@ const talents = [
   '自信', '追求', '战略', '取悦',
 ];
 
-const topic = ['执行力', '影响力', '关系建立', '战略思维'];
-
 const belong = [0, 1, 2, 3, 0, 0, 1, 1, 1, 2, 3, 0, 2, 0, 2, 0, 0, 3, 2, 3, 2, 2, 3, 3, 3, 1, 2, 2, 0, 0, 1, 1, 3, 1];
 
 const talent_count = [19, 18, 18, 19, 15, 17, 15, 16, 15, 18, 15, 20, 16, 17, 15, 16, 16, 16, 16, 18, 17, 16, 17, 20, 16, 17, 16, 16, 16, 16, 17, 19, 20, 16];
@@ -391,7 +389,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selects: Array(questions.length).fill(null),
+      selects: Array(questions.length).fill(2),
       visible: false,
       scope_list: [],
     };
@@ -564,6 +562,10 @@ export default class App extends Component {
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
+          footer={[
+            <Button key="back" onClick={this.handleCancel}>关闭</Button>,
+            <Button key="submit" type="primary" onClick={this.handleOk}>详细分析</Button>,
+          ]}
         >
 
           {this.showResult()}
