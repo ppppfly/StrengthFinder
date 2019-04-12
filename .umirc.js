@@ -8,9 +8,7 @@ export default {
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: true,
-      dva: {
-        immer: true
-      },
+      dva: true,
       dynamicImport: false,
       title: 'StrengthFinder',
       dll: false,
