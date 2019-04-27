@@ -12,7 +12,7 @@ const Form = ({ onChange, questions }) => {
 
           <Col span={7}>{item.q1}</Col>
           <Col span={9}>
-            <Radio.Group onChange={onChange(item.index - 1)} value={item.select}>
+            <Radio.Group onChange={onChange(item.id - 1)} value={item.select}>
               <Radio value={-2}/>
               <Radio value={-1}/>
               <Radio value={0}/>

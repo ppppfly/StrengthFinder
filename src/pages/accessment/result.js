@@ -1,35 +1,55 @@
+import { connect } from 'dva';
+
 import TopHeader from '../../components/TopHeader';
-import {Card, Button} from 'antd';
+import TopicTable from '../../components/TopicTable';
+import { Col, Row } from 'antd';
+
+function Result({ dispatch, scopes, belong, topic, talents }) {
 
 
-const gridStyle = {
-  width: '25%',
-  textAlign: 'center',
-};
+  function categoryAndSort() {
 
-const de = () => {
-  const delay = (timeout) => {
-    return new Promise(resolve => {
-      console.log('---> promise');
-      setTimeout(resolve, timeout)
-    })
-  };
+    let categories = [[], [], [], []];
 
-  delay(2000).then(_ => {
-    console.log('executed');
-  });
-};
+    for (let i in scopes) {
 
-export default function() {
+      let topic_idx = belong[i];
+
+      categories[topic_idx].push({
+        talent: talents[i],
+        scope: scopes[i]
+      })
+
+    }
+
+    return categories
+
+  }
+
   return (
     <TopHeader title="测评结果" subTitle="v.1.3.0">
-      <Card title="测评结果">
-        <Card.Grid style={gridStyle}>Content</Card.Grid>
-        <Card.Grid style={gridStyle}>Content</Card.Grid>
-        <Card.Grid style={gridStyle}>Content</Card.Grid>
-        <Card.Grid style={gridStyle}>Content</Card.Grid>
-      </Card>
-      <Button onClick={de}>延迟处理</Button>
+      <Row gutter={2}>
+        {
+          categoryAndSort().map((value, index)=>(
+            <Col key={index} span={6} >
+              <TopicTable
+                data={value}
+                title={topic[index][0]}
+                desc={topic[index][1]}
+              />
+            </Col>
+          ))
+        }
+      </Row>
     </TopHeader>
   );
 }
+
+function mapStateToProps(state) {
+  const { scopes, belong, topic, talents } = state.scopes;
+  return {
+    scopes, belong, topic, talents
+  };
+}
+
+export default connect(mapStateToProps)(Result);
