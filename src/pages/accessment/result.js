@@ -4,10 +4,11 @@ import TopHeader from '../../components/TopHeader';
 import TopicTable from '../../components/TopicTable';
 import { Col, Row } from 'antd';
 
-function Result({ dispatch, scopes, belong, topic, talents }) {
+function Result({ dispatch, scopes, belong, topic, talents, first_10_scope, first_500_scope }) {
 
 
   function categoryAndSort() {
+    // 找出前 10 项优势
 
     let categories = [[], [], [], []];
 
@@ -17,7 +18,10 @@ function Result({ dispatch, scopes, belong, topic, talents }) {
 
       categories[topic_idx].push({
         talent: talents[i],
-        scope: scopes[i]
+        scope: scopes[i],
+        color: scopes[i] < 1000 ? 'lime' : null,
+        is_first_10th: scopes[i] >= first_10_scope,
+        is_first_500: scopes[i] >= first_500_scope,
       })
 
     }
@@ -31,7 +35,7 @@ function Result({ dispatch, scopes, belong, topic, talents }) {
       <Row gutter={2}>
         {
           categoryAndSort().map((value, index)=>(
-            <Col key={index} span={6} >
+            <Col key={index} xs={24} lg={6} style={{marginTop: '50px'}}>
               <TopicTable
                 data={value}
                 title={topic[index][0]}
@@ -46,9 +50,9 @@ function Result({ dispatch, scopes, belong, topic, talents }) {
 }
 
 function mapStateToProps(state) {
-  const { scopes, belong, topic, talents } = state.scopes;
+  const { scopes, belong, topic, talents, first_10_scope, first_500_scope } = state.scopes;
   return {
-    scopes, belong, topic, talents
+    scopes, belong, topic, talents, first_10_scope, first_500_scope
   };
 }
 

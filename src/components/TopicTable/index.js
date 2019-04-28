@@ -1,6 +1,7 @@
 import styles from './index.css';
-import { Table, Typography } from 'antd';
-const { Title, Paragraph, Text } = Typography;
+import { Table, Typography, Tag, Icon, Tooltip } from 'antd';
+
+const { Title, Paragraph } = Typography;
 
 export default function({data, title, desc}) {
 
@@ -13,6 +14,23 @@ export default function({data, title, desc}) {
     dataIndex: 'scope',
     defaultSortOrder: 'descend',
     sorter: (a, b) => a.scope - b.scope,
+    render: (scope, record, index) => (
+      <span>
+        <Tag color={record.color} key={scope}>{scope}</Tag>
+        {
+          record.is_first_10th &&
+          <Tooltip placement="topLeft" title="前10的优势" arrowPointAtCenter>
+            <Icon type="star" theme="twoTone" style={{marginRight: '5px'}}/>
+          </Tooltip>
+        }
+        {
+          record.is_first_500 &&
+          <Tooltip placement="topLeft" title="前500分的优势" arrowPointAtCenter>
+            <Icon type="smile" theme="twoTone" twoToneColor="#eb2f96" />
+          </Tooltip>
+        }
+      </span>
+    ),
   }];
 
   return (
@@ -23,6 +41,7 @@ export default function({data, title, desc}) {
         columns={columns}
         dataSource={data}
         pagination={false}
+        size="small"
       />
     </div>
   );

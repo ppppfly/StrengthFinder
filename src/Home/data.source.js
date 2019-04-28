@@ -11,8 +11,8 @@ export const Nav00DataSource = {
   Menu: {
     className: 'header0-menu',
     children: [
-      { name: 'item0', a: { children: '测评开始', href: '/accessment/' } },
-      { name: 'item1', a: { children: '测评分析', href: '/accessment/result' } },
+      { name: 'item0', a: { children: '天赋测评', href: '/accessment/' } },
+      { name: 'item1', a: { children: '五环测评', href: '/accessment/result' } },
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },

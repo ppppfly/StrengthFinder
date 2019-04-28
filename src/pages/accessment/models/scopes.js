@@ -18,6 +18,8 @@ export default {
       ['战略思维', '能帮助团队思考可能发生的事，他们获取并分析信息，以作出更好的决定']
     ],
     belong: [0, 1, 2, 3, 0, 0, 1, 1, 1, 2, 3, 0, 2, 0, 2, 0, 0, 3, 2, 3, 2, 2, 3, 3, 3, 1, 2, 2, 0, 0, 1, 1, 3, 1],
+    first_10_scope: 0, // 前10优势的分数线
+    first_500_scope: 0, // 第一优势 500 分内
   },
 
   subscriptions: {
@@ -71,13 +73,17 @@ export default {
 
       }
 
-      console.log('---> calculate scope', scope_list);
+      scope_list = scope_list.map(
+        (value, idx) => parseInt(value * 1000 / state.talent_count[idx]),
+      );
+
+      let new_list = [...scope_list].sort((a,b) => b - a);
 
       return {
         ...state,
-        scopes: scope_list.map(
-          (value, idx) => parseInt(value * 1000 / state.talent_count[idx]),
-        ),
+        scopes: scope_list,
+        first_10_scope: new_list.slice(0, 10)[9],
+        first_500_scope: new_list[0] - 500,
       };
 
     }
