@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0bf7c3e-cb2d-40a2-9cec-cc0b27c497da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/data.source.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/data.source.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopicTable/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopicTable/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/accessment/models/scopes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessment/models/scopes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/accessment/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessment/result.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +20,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/TopicTable/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#33#0" expanded="true" />
                   </folding>
@@ -35,7 +32,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/accessment/result.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="435">
@@ -52,20 +49,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="135">
                   <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/accessment/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                    <element signature="e#200#221#0" expanded="true" />
-                    <element signature="n#!!block;n#get_result#0;n#Accessment#0" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -121,6 +104,8 @@
       <find>selects</find>
       <find>暴力</find>
       <find>scope_list</find>
+      <find>console.log</find>
+      <find>console.log(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/pages/accessment/index.js" />
         <option value="$PROJECT_DIR$/src/Home/data.source.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/models/scopes.js" />
-        <option value="$PROJECT_DIR$/src/components/TopicTable/index.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/result.js" />
+        <option value="$PROJECT_DIR$/src/components/TopicTable/index.js" />
       </list>
     </option>
   </component>
@@ -270,7 +255,7 @@
       <workItem from="1555061644506" duration="3415000" />
       <workItem from="1555206700459" duration="2804000" />
       <workItem from="1556357951991" duration="12680000" />
-      <workItem from="1556402725970" duration="4555000" />
+      <workItem from="1556402725970" duration="4862000" />
     </task>
     <task id="LOCAL-00003" summary="测试">
       <created>1554685906623</created>
@@ -286,14 +271,22 @@
       <option name="project" value="LOCAL" />
       <updated>1556382965785</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改：测试结果页面">
+      <created>1556411167552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556411167552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38520000" />
+    <option name="totallyTimeSpent" value="38827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49937266" visible="true" weight="0.17008953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -307,8 +300,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49517167" visible="true" weight="0.32673267" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.50482833" side_tool="true" weight="0.32746115" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49499735" visible="true" weight="0.32673267" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.5050026" side_tool="true" visible="true" weight="0.32673267" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32953367" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -359,7 +352,8 @@
     <MESSAGE value="修改 Modal 逻辑" />
     <MESSAGE value="测试" />
     <MESSAGE value="新增测试结果页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增测试结果页面" />
+    <MESSAGE value="修改：测试结果页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改：测试结果页面" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/TopHeader/index.js">
@@ -480,16 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TopicTable/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/accessment/result.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -504,6 +488,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TopicTable/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

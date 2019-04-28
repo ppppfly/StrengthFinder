@@ -16,16 +16,27 @@ export default function({data, title, desc}) {
     sorter: (a, b) => a.scope - b.scope,
     render: (scope, record, index) => (
       <span>
-        <Tag color={record.color} key={scope}>{scope}</Tag>
+        {
+
+          record.color ? (
+            <Tooltip placement="topLeft" title="少于 1000 分的优势" arrowPointAtCenter>
+              <Tag color={record.color} key={scope}>{scope}</Tag>
+            </Tooltip>
+          ) : (
+            <Tag key={scope}>{scope}</Tag>
+          )
+
+        }
+
         {
           record.is_first_10th &&
-          <Tooltip placement="topLeft" title="前10的优势" arrowPointAtCenter>
+          <Tooltip placement="topLeft" title="前 10 的优势" arrowPointAtCenter>
             <Icon type="star" theme="twoTone" style={{marginRight: '5px'}}/>
           </Tooltip>
         }
         {
           record.is_first_500 &&
-          <Tooltip placement="topLeft" title="前500分的优势" arrowPointAtCenter>
+          <Tooltip placement="topLeft" title="前 500 分的优势" arrowPointAtCenter>
             <Icon type="smile" theme="twoTone" twoToneColor="#eb2f96" />
           </Tooltip>
         }
