@@ -3,15 +3,16 @@ import router from 'umi/router';
 import styles from './index.css';
 
 
-function BasicLayout(props) {
+function BasicLayout({title, subTitle, extra, children}) {
   return (
     <div className={styles.normal}>
       <PageHeader
-        title={props.title}
-        subTitle={props.subTitle}
+        title={title}
+        subTitle={subTitle}
         onBack={router.goBack}
+        extra={extra}
       />
-      {props.children}
+      {children}
     </div>
   );
 }

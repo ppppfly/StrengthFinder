@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0bf7c3e-cb2d-40a2-9cec-cc0b27c497da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/TalentTable/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TalentTable/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopHeader/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopHeader/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopicTable/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopicTable/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/accessment/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessment/result.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,79 +21,55 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/TopicTable/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#0#33#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/accessment/result.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-                  <folding>
-                    <element signature="e#0#30#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/scopes.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/questions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="201" column="13" lean-forward="true" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#71#18366#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/accessment/result.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/TalentTable/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="67" column="4" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+              <folding>
+                <element signature="e#206#272#0" />
+                <element signature="e#437#1202#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TopicTable/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#437#1202#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/scopes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,6 +86,8 @@
       <find>scope_list</find>
       <find>console.log</find>
       <find>console.log(</find>
+      <find>92</find>
+      <find>topic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,12 +100,14 @@
         <option value="$PROJECT_DIR$/src/Home/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/TopicTable/index.css" />
         <option value="$PROJECT_DIR$/src/components/Form/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/accessment/models/questions.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/index.js" />
         <option value="$PROJECT_DIR$/src/Home/data.source.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/models/scopes.js" />
-        <option value="$PROJECT_DIR$/src/pages/accessment/result.js" />
+        <option value="$PROJECT_DIR$/src/pages/accessment/models/questions.js" />
         <option value="$PROJECT_DIR$/src/components/TopicTable/index.js" />
+        <option value="$PROJECT_DIR$/src/components/TopHeader/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/accessment/result.js" />
+        <option value="$PROJECT_DIR$/src/components/TalentTable/index.js" />
       </list>
     </option>
   </component>
@@ -156,7 +140,21 @@
               <item name="StrengthFinder" type="b2602c69:ProjectViewProjectNode" />
               <item name="StrengthFinder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrengthFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrengthFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="TalentTable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrengthFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrengthFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="TopicTable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StrengthFinder" type="b2602c69:ProjectViewProjectNode" />
@@ -278,30 +276,37 @@
       <option name="project" value="LOCAL" />
       <updated>1556411167552</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改：问题中的错别字">
+      <created>1556616256009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556616256009</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38827000" />
+    <option name="totallyTimeSpent" value="41934000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49937266" visible="true" weight="0.17008953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49937266" visible="true" weight="0.16998191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.50062734" side_tool="true" weight="0.17061612" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49517167" weight="0.2069307" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49427366" visible="true" weight="0.20612244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49499735" visible="true" weight="0.32673267" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.5050026" side_tool="true" visible="true" weight="0.32673267" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49499735" weight="0.32673267" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.50572634" side_tool="true" visible="true" weight="0.20612244" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32953367" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -353,19 +358,10 @@
     <MESSAGE value="测试" />
     <MESSAGE value="新增测试结果页面" />
     <MESSAGE value="修改：测试结果页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改：测试结果页面" />
+    <MESSAGE value="修改：问题中的错别字" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改：问题中的错别字" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/TopHeader/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -427,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -447,23 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/questions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="201" column="13" lean-forward="true" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
-          <folding>
-            <element signature="e#71#18366#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/accessment/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#200#221#0" expanded="true" />
-            <element signature="n#!!block;n#get_result#0;n#Accessment#0" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="124" column="77" lean-forward="true" selection-start-line="124" selection-start-column="77" selection-end-line="124" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -474,29 +455,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/accessment/result.js">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/page-header/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="150">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TopHeader/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/accessment/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#200#221#0" expanded="true" />
+            <element signature="n#!!block;n#random_arr#0" />
+            <element signature="e#385#497#0" />
+            <element signature="n#!!block;n#constructor#0;n#Accessment#0" />
+            <element signature="e#611#720#0" />
+            <element signature="n#!!block;n#onChange#0;n#Accessment#0" />
+            <element signature="n#!!block;n#set#0;n#!!block;n#onChange#0;n#Accessment#0" />
+            <element signature="e#820#946#0" />
+            <element signature="e#873#937#0" />
+            <element signature="n#!!block;n#gen_question_data#0;n#Accessment#0" />
+            <element signature="e#1131#1295#0" />
+            <element signature="e#1146#1288#0" />
+            <element signature="n#!!block;n#count_down#0;n#Accessment#0" />
+            <element signature="e#1421#1559#0" />
+            <element signature="n#!!block;n#get_result#0;n#Accessment#0" />
+            <element signature="e#1779#2376#0" />
+            <element signature="e#1839#1946#0" />
+            <element signature="e#1968#1995#0" />
+            <element signature="e#2020#2158#0" />
+            <element signature="e#2062#2149#0" />
+            <element signature="e#2179#2243#0" />
+            <element signature="e#2264#2327#0" />
+            <element signature="e#2333#2369#0" />
+            <element signature="e#2412#2758#0" />
+            <element signature="e#2459#2749#0" />
+            <element signature="e#2568#2728#0" />
+            <element signature="e#2591#2712#0" />
+            <element signature="e#2764#2881#0" />
+            <element signature="e#2820#2872#0" />
+            <element signature="e#2908#2963#0" />
+            <element signature="e#2928#2957#0" />
+            <element signature="e#2990#3045#0" />
+            <element signature="e#3010#3039#0" />
+            <element signature="n#!!block;n#showResult#0;n#Accessment#0" />
+            <element signature="e#3197#3389#0" />
+            <element signature="e#3414#3958#0" />
+            <element signature="e#3422#3525#0" />
+            <element signature="e#3533#3775#0" />
+            <element signature="e#3783#3840#0" />
+            <element signature="e#3848#3951#0" />
+            <element signature="e#3980#4097#0" />
+            <element signature="n#!!block;n#goToResultPage#0;n#Accessment#0" />
+            <element signature="e#4330#4486#0" />
+            <element signature="e#4420#4480#0" />
+            <element signature="e#4546#5037#0" />
+            <element signature="e#4566#5015#0" />
+            <element signature="e#4624#4996#0" />
+            <element signature="e#4771#4947#0" />
+            <element signature="e#4794#4931#0" />
+            <element signature="e#5066#5144#0" />
+            <element signature="e#5216#5558#0" />
+            <element signature="e#5278#5541#0" />
+            <element signature="e#5397#5528#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/scopes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TopicTable/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#437#1202#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/accessment/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TalentTable/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="67" column="4" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+          <folding>
+            <element signature="e#206#272#0" />
+            <element signature="e#437#1202#0" />
           </folding>
         </state>
       </provider>

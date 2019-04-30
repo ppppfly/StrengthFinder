@@ -46,9 +46,9 @@ export default function({data, title, desc}) {
 
   return (
     <div className={styles.container}>
-      <Title level={2}>{title}</Title>
-      <Paragraph>{desc}</Paragraph>
+
       <Table
+        title={() => (<div><Title level={2}>{title}</Title><Paragraph>{desc}</Paragraph></div>)}
         columns={columns}
         dataSource={data}
         pagination={false}
