@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import TopHeader from '../../components/TopHeader';
 import TopicTable from '../../components/TopicTable';
 import TalentTable from '../../components/TalentTable';
-import { Button, Col, Drawer, Row, Table } from 'antd';
+import { Button, Col, Drawer, Row } from 'antd';
 
 
 class Result extends Component {
@@ -80,7 +80,15 @@ class Result extends Component {
       <TopHeader
         title="测评结果"
         subTitle="v.1.3.0"
-        extra={<Button onClick={this.scopeListDrawerShow.bind(this)}>Default</Button>}>
+        extra={
+          <Button
+            onClick={this.scopeListDrawerShow.bind(this)}
+            shape="circle"
+            icon="ordered-list"
+            size="small"
+          />
+        }
+      >
         <Row gutter={2} style={{ 'padding': '5px' }}>
           {
             this.categoryAndSort().map((value, index) => (

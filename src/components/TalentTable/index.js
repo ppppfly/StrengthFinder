@@ -1,7 +1,5 @@
-import styles from './index.css';
-import { Table, Typography, Tag, Icon, Tooltip } from 'antd';
+import { Icon, Table, Tag, Tooltip } from 'antd';
 
-const { Title, Paragraph } = Typography;
 
 export default function({data}) {
 
