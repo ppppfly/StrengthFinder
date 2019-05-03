@@ -1,4 +1,12 @@
 
-.normal-col {
+.introduce {
+  text-align: left;
+  width: 85%;
   margin: auto;
+  border: dotted 1px silver;
+  padding: 5px;
+}
+
+.introduce > p {
+  text-indent: 2em;
 }

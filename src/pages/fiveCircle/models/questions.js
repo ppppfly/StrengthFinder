@@ -30,7 +30,7 @@ export default {
       { id: 24, q: "每当你在做这个领域相关事情时，是否觉得有很多人正需要你做这事？", t: 4 },
       { id: 25, q: "你是否满足于一生之久都从事这个领域？", t: 4 },
     ],
-    occupation: [],
+    occupations: [],
     selects: Array(180).fill(2),
   },
 
@@ -49,11 +49,6 @@ export default {
     save(state, action) {
       return { ...state, ...action.payload };
     },
-    select(state, {payload}) {
-      let selects = [...state.selects];
-      selects[payload.idx] = payload.value;
-      return { ...state, selects}
-    }
   },
 
 };

@@ -1,17 +1,17 @@
-.dynamic-delete-button {
+.dynamicDeleteButton {
   cursor: pointer;
-  position: relative;
-  top: 4px;
+  position: absolute;
+  top: -4px;
   font-size: 24px;
   color: #999;
   transition: all .3s;
 }
 
-.dynamic-delete-button:hover {
+.dynamicDeleteButton:hover {
   color: #777;
 }
 
-.dynamic-delete-button[disabled] {
+.dynamicDeleteButton[disabled] {
   cursor: not-allowed;
   opacity: 0.5;
 }
