@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'dva';
 import { Button, Modal, Table } from 'antd';
 import router from 'umi/router';
-import {version} from '../../../package.json';
-// import writeJsonFile from 'write-json-file';
-
+import { version } from '../../../package.json';
 import './index.css';
 
 import Form from './components/Form';

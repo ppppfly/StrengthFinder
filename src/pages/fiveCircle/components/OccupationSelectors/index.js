@@ -1,50 +1,50 @@
-import {
-  Form, Input, Icon, Button,
-} from 'antd';
+import React from 'react';
+import { Form, Input, Icon, Button } from 'antd';
+import style from './index.css';
 
 let id = 0;
 
-export default Form.create({ name: 'dynamic_form_item' })(
-  ({ form }) => {
+class DynamicFieldSet extends React.Component {
+  remove = (k) => {
+    const { form } = this.props;
+    // can use data-binding to get
+    const keys = form.getFieldValue('keys');
+    // We need at least one passenger
+    if (keys.length === 1) {
+      return;
+    }
 
-    function remove (k) {
-      // can use data-binding to get
-      const keys = form.getFieldValue('keys');
-      // We need at least one passenger
-      if (keys.length === 1) {
-        return;
+    // can use data-binding to set
+    form.setFieldsValue({
+      keys: keys.filter(key => key !== k),
+    });
+  };
+
+  add = () => {
+    const { form } = this.props;
+    // can use data-binding to get
+    const keys = form.getFieldValue('keys');
+    const nextKeys = keys.concat(id++);
+    // can use data-binding to set
+    // important! notify form to detect changes
+    form.setFieldsValue({
+      keys: nextKeys,
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        const { keys, names } = values;
+        console.log('Received values of form: ', values);
+        console.log('Merged values:', keys.map(key => names[key]));
       }
+    });
+  };
 
-      // can use data-binding to set
-      form.setFieldsValue({
-        keys: keys.filter(key => key !== k),
-      });
-    }
-
-    function add (){
-      // can use data-binding to get
-      const keys = form.getFieldValue('keys');
-      const nextKeys = keys.concat(id++);
-      // can use data-binding to set
-      // important! notify form to detect changes
-      form.setFieldsValue({
-        keys: nextKeys,
-      });
-    }
-
-    function handleSubmit (e) {
-      e.preventDefault();
-      form.validateFields((err, values) => {
-        if (!err) {
-          const { keys, names } = values;
-          console.log('Received values of form: ', values);
-          console.log('Merged values:', keys.map(key => names[key]));
-        }
-      });
-    }
-
-
-    const { getFieldDecorator, getFieldValue } = form;
+  render() {
+    const { getFieldDecorator, getFieldValue } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -82,19 +82,18 @@ export default Form.create({ name: 'dynamic_form_item' })(
         )}
         {keys.length > 1 ? (
           <Icon
-            className="dynamic-delete-button"
+            className={style.dynamicDeleteButton}
             type="minus-circle-o"
-            onClick={() => remove(k)}
+            onClick={() => this.remove(k)}
           />
         ) : null}
       </Form.Item>
     ));
-
     return (
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={this.handleSubmit}>
         {formItems}
         <Form.Item {...formItemLayoutWithOutLabel}>
-          <Button type="dashed" onClick={add} style={{ width: '60%' }}>
+          <Button type="dashed" onClick={this.add} style={{ width: '60%' }}>
             <Icon type="plus"/> Add field
           </Button>
         </Form.Item>
@@ -104,4 +103,6 @@ export default Form.create({ name: 'dynamic_form_item' })(
       </Form>
     );
   }
-);
+}
+
+export default Form.create({ name: 'select_occupation' })(DynamicFieldSet);
