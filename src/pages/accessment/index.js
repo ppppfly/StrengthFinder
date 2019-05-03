@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'dva';
 import { Button, Modal, Table } from 'antd';
 import router from 'umi/router';
+import {version} from '../../../package.json';
 // import writeJsonFile from 'write-json-file';
 
 import './index.css';
 
-import Form from '../../components/Form';
+import Form from './components/Form';
 import TopHeader from '../../components/TopHeader';
 
 
@@ -248,7 +249,7 @@ class Accessment extends Component {
   }
 
   render = () => (
-    <TopHeader title="公益人优势测评 v.1.3.0" subTitle="寻找你的优势领域">
+    <TopHeader title={`公益人优势测评 ${version}`} subTitle="寻找你的优势领域">
       <div className="App">
         <Form questions={this.gen_question_data()} onChange={this.onChange.bind(this)}/>
         <Button type="primary" onClick={this.goToResultPage.bind(this)} style={{ margin: '50px' }}>

@@ -1,8 +1,8 @@
 import { connect } from 'dva';
 import React, { Component } from 'react';
 import TopHeader from '../../components/TopHeader';
-import TopicTable from '../../components/TopicTable';
-import TalentTable from '../../components/TalentTable';
+import TopicTable from './components/TopicTable';
+import TalentTable from './components/TalentTable';
 import { Button, Col, Drawer, Row } from 'antd';
 
 

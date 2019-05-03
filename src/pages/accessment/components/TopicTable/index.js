@@ -1,5 +1,5 @@
 import styles from './index.css';
-import { Table, Typography, Tag, Icon, Tooltip } from 'antd';
+import { Table, Typography, Tag, Icon, Tooltip } from 'antd/lib/index';
 
 const { Title, Paragraph } = Typography;
 

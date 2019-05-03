@@ -1,4 +1,4 @@
-import { Icon, Table, Tag, Tooltip } from 'antd';
+import { Icon, Table, Tag, Tooltip } from 'antd/lib/index';
 
 
 export default function({data}) {

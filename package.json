@@ -1,4 +1,6 @@
 {
+  "name": "FiveCircleAccessment",
+  "version": "1.4.0",
   "private": true,
   "scripts": {
     "start": "umi dev",
