@@ -4,7 +4,7 @@ import style from './index.css';
 let id = 0;
 
 export default Form.create({ name: 'select_occupation' })(
-  ({form, onSubmit}) => {
+  ({form, onSubmit, initialOccupations}) => {
 
     const remove = (k) => {
       // can use data-binding to get

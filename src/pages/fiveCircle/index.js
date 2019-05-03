@@ -21,14 +21,12 @@ export default connect(
 
     const onOccupationSelect = occupations => {
       dispatch({
-        type: 'FCQuestions/save',
+        type: 'FCQuestions/saveOccupations',
         payload: { occupations },
       });
 
       router.push('/fiveCircle/accessment');
     };
-
-    console.log('--->', occupations);
 
     const introduce = '' +
       '## 漫五环优势领域定位工具\n' +
@@ -46,7 +44,7 @@ export default connect(
         </div>
 
         <Row style={{marginTop: '25px'}}>
-          <OccupationSelectors onSubmit={onOccupationSelect}/>
+          <OccupationSelectors onSubmit={onOccupationSelect} initialOccupations={occupations}/>
         </Row>
       </TopHeader>
     );

@@ -1,11 +1,11 @@
-import { Icon, Table, Tag, Tooltip } from 'antd/lib/index';
+import { Icon, Table, Tag, Tooltip } from 'antd';
 
 
 export default function({data}) {
 
   function sorter(a, b) {
-    var nameA = a.toUpperCase(); // ignore upper and lowercase
-    var nameB = b.toUpperCase(); // ignore upper and lowercase
+    let nameA = a.toUpperCase(); // ignore upper and lowercase
+    let nameB = b.toUpperCase(); // ignore upper and lowercase
     if (nameA < nameB) {
       return -1;
     }

@@ -46,9 +46,32 @@ export default {
   },
 
   reducers: {
-    save(state, action) {
-      return { ...state, ...action.payload };
+    save(state, {payload}) {
+      return { ...state, ...payload };
     },
+    saveOccupations(state, {payload}) {
+      // 保存 occupations，并且重新生成 selects 二维阵列
+      const {occupations} = payload;
+
+      const genArray = length => () => Array(length).fill(0);
+      let selects = state.questions.map(genArray(occupations.length));
+
+      return {...state, occupations, selects}
+    },
+    setChoices(state, {payload}) {
+      const { questionId, selectedOccupations } = payload;
+
+      console.log('setChoices', payload);
+
+      let selects = [...state.selects];
+      let newSet = Array(state.occupations.length).fill(0);
+      for (let i in selectedOccupations) {
+        newSet[selectedOccupations[i]] = 1;
+      }
+      selects[questionId - 1] = newSet;
+
+      return {...state, selects}
+    }
   },
 
 };

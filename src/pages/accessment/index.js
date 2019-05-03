@@ -3,7 +3,7 @@ import { connect } from 'dva';
 import { Button, Modal, Typography } from 'antd';
 import router from 'umi/router';
 import { version } from '../../../package.json';
-import './index.css';
+import style from './index.css';
 
 import Form from './components/Form';
 import TopHeader from '../../components/TopHeader';
@@ -120,7 +120,7 @@ class Accessment extends Component {
         </Paragraph>
       </Typography>
 
-      <div className="App">
+      <div className={style.App}>
         <Form questions={this.gen_question_data()} onChange={this.onChange.bind(this)}/>
         <Button type="primary" onClick={this.goToResultPage.bind(this)} style={{ margin: '50px' }}>
           提交报告 生成测试结果
