@@ -37,56 +37,6 @@ export default {
     save(state, action) {
       return { ...state, ...action.payload };
     },
-    plus(state, action) {
-
-      let scopes = [...state.scopes];
-      scopes.push('hahahaha');
-
-      return { ...state, scopes };
-    },
-    calculate(state, { payload }) {
-
-      let scope_list = Array(state.talents.length).fill(0);
-
-      for (let idx in payload.selects) {
-
-        let select = payload.selects[idx];
-        const talents = payload.questions[idx].m;
-
-        if (select === 0) {
-          // 问题下的所有"天赋"增加 1 分
-          talents.map( value => scope_list[value[0]]++);
-
-        } else if (select < 0) {
-          // 左边问题，加分
-          talents
-            .filter( value => value[1] === -1 )
-            .map( value => scope_list[value[0]] += Math.abs(select) + 1 );
-
-        } else if (select > 0) {
-          // 右边问题，加分
-          talents
-            .filter( value => value[1] === 1 )
-            .map( value => scope_list[value[0]] += Math.abs(select) + 1 );
-
-        }
-
-      }
-
-      scope_list = scope_list.map(
-        (value, idx) => parseInt(value * 1000 / state.talent_count[idx]),
-      );
-
-      let new_list = [...scope_list].sort((a,b) => b - a);
-
-      return {
-        ...state,
-        scopes: scope_list,
-        first_10_scope: new_list.slice(0, 10)[9],
-        first_500_scope: new_list[0] - 500,
-      };
-
-    }
   },
 
 };

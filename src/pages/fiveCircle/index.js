@@ -26,7 +26,6 @@ export default connect(
       });
 
       router.push('/fiveCircle/accessment');
-
     };
 
     console.log('--->', occupations);

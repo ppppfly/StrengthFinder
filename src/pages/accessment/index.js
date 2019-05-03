@@ -8,7 +8,7 @@ import './index.css';
 import Form from './components/Form';
 import TopHeader from '../../components/TopHeader';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph  } = Typography;
 
 
 function random_arr(arr) {
