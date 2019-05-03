@@ -1,16 +1,16 @@
-import { Button, Checkbox, Form } from 'antd';
+import { Checkbox } from 'antd';
 import style from './index.css';
 
 const CheckboxGroup = Checkbox.Group;
 
-export default ({question, occupations, onChange}) => {
+export default ({question, occupations, onChange, index}) => {
 
   let options = occupations.map((value, idx) => ({label: value, value: idx}));
 
   return (
     <div>
       <div>
-        {question.id}. {question.q}
+        {index + 1}. {question.q}
       </div>
       <CheckboxGroup
         options={options}
@@ -19,12 +19,6 @@ export default ({question, occupations, onChange}) => {
         }
         className={style.checkboxGroup}
       />
-      <div className="App">
-        <Form questions={this.gen_question_data()} onChange={this.onChange.bind(this)}/>
-        <Button type="primary" onClick={this.goToResultPage.bind(this)} style={{ margin: '50px' }}>
-          提交报告 生成测试结果
-        </Button>
-      </div>
     </div>
   );
 };

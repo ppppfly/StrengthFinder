@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
-import { Button, Modal, Typography } from 'antd';
+import { Button, Modal, Typography, BackTop } from 'antd';
 import router from 'umi/router';
 import { version } from '../../../package.json';
 import style from './index.css';
 
 import Form from './components/Form';
 import TopHeader from '../../components/TopHeader';
+import {random_arr} from '../../lib/utils';
 
 const { Title, Paragraph  } = Typography;
-
-
-function random_arr(arr) {
-  for (let i = 1; i < arr.length; i++) {
-    const random = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[random]] = [arr[random], arr[i]];
-  }
-  return arr;
-}
 
 class Accessment extends Component {
 
@@ -112,6 +104,8 @@ class Accessment extends Component {
 
   render = () => (
     <TopHeader title={`公益人优势测评 ${version}`} subTitle="寻找你的优势领域">
+
+      <BackTop />
 
       <Typography>
         <Title level={2}>匠人天赋的鉴别测试</Title>
