@@ -3,23 +3,9 @@ export default {
   namespace: 'FCScopes',  // fiveCirclesScopes 的缩写
 
   state: {
-    talents: [
-      '成就', '行动', '适应', '分析', '统筹', '信仰', '统率', '沟通', '竞争', '关联',
-      '回顾', '审慎', '伯乐', '纪律', '体谅', '公平', '专注', '前瞻', '和谐', '理念',
-      '包容', '个别', '搜集', '思维', '学习', '完美', '积极', '交往', '责任', '排难',
-      '自信', '追求', '战略', '取悦',
-    ],
-    talent_count: [19, 18, 18, 19, 15, 17, 15, 16, 15, 18, 15, 20, 16, 17, 15, 16, 16, 16, 16, 18, 17, 16, 17, 20, 16, 17, 16, 16, 16, 16, 17, 19, 20, 16],
+    topic: ['天赋', '自信', '兴趣', '专注', '满足'],
+    occupations: [],
     scopes: [],
-    topic: [
-      ['执行力', '懂得如何完成某些事，并能从行动本身获得满足感'],
-      ['影响力', '知道如何取得主导、令人信服、为确保聆听团队意见'],
-      ['关系建立', '具备构建牢固关系的能力，从而将团队凝聚起来并发挥更多的力量'],
-      ['战略思维', '能帮助团队思考可能发生的事，他们获取并分析信息，以作出更好的决定']
-    ],
-    belong: [0, 1, 2, 3, 0, 0, 1, 1, 1, 2, 3, 0, 2, 0, 2, 0, 0, 3, 2, 3, 2, 2, 3, 3, 3, 1, 2, 2, 0, 0, 1, 1, 3, 1],
-    first_10_scope: 0, // 前10优势的分数线
-    first_500_scope: 0, // 第一优势 500 分内
   },
 
   subscriptions: {
@@ -37,6 +23,28 @@ export default {
     save(state, action) {
       return { ...state, ...action.payload };
     },
+    calculate(state, { payload }) {
+
+      const { occupations, selects, questions } = payload;
+
+      // 计算每个职业的五环分值
+      let scopes = Array(occupations.length).fill([0, 0, 0, 0, 0]);  // 初始化为 0
+      let questionIdx = 0;
+
+      function reducer(scopes, select) {
+        const topicIdx = questions[questionIdx].t;
+        questionIdx ++;
+        const mapper = (value, index) => {
+          value[topicIdx] += select[index];
+          return [...value];
+        };
+        return scopes.map(mapper)
+      }
+      scopes = selects.reduce(reducer, scopes);
+
+      console.log(scopes);
+      return { ...state, occupations, scopes};
+    }
   },
 
 };

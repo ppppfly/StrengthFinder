@@ -61,8 +61,6 @@ export default {
     setChoices(state, {payload}) {
       const { questionId, selectedOccupations } = payload;
 
-      console.log('setChoices', payload);
-
       let selects = [...state.selects];
       let newSet = Array(state.occupations.length).fill(0);
       for (let i in selectedOccupations) {

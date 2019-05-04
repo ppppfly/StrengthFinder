@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0bf7c3e-cb2d-40a2-9cec-cc0b27c497da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/accessment/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessment/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/fiveCircle/accessment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fiveCircle/accessment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/fiveCircle/components/OneQuestion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fiveCircle/components/OneQuestion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,16 +17,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="StrengthFinder" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/accessment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="497">
+              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/result.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/models/questions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1121">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -76,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/Home/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/TopicTable/index.css" />
         <option value="$PROJECT_DIR$/src/components/Form/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/accessment/models/questions.js" />
         <option value="$PROJECT_DIR$/src/components/TopicTable/index.js" />
         <option value="$PROJECT_DIR$/src/components/TopHeader/index.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/result.js" />
@@ -86,7 +113,6 @@
         <option value="$PROJECT_DIR$/src/pages/accessment/components/Form/index.js" />
         <option value="$PROJECT_DIR$/src/pages/fiveCircle/components/OccupationSelectors/index.css" />
         <option value="$PROJECT_DIR$/src/pages/fiveCircle/index.css" />
-        <option value="$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/models/scopes.js" />
         <option value="$PROJECT_DIR$/src/pages/fiveCircle/components/OccupationSelectors/index.js" />
         <option value="$PROJECT_DIR$/src/pages/fiveCircle/index.js" />
@@ -98,7 +124,9 @@
         <option value="$PROJECT_DIR$/src/lib/utils.js" />
         <option value="$PROJECT_DIR$/src/pages/accessment/index.js" />
         <option value="$PROJECT_DIR$/src/pages/fiveCircle/components/OneQuestion/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/accessment/models/questions.js" />
         <option value="$PROJECT_DIR$/src/pages/fiveCircle/accessment.js" />
+        <option value="$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js" />
       </list>
     </option>
   </component>
@@ -145,7 +173,23 @@
               <item name="StrengthFinder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="accessment" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrengthFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrengthFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="fiveCircle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrengthFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrengthFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="fiveCircle" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,7 +232,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -196,6 +250,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -232,7 +291,9 @@
       <workItem from="1556713007815" duration="2848000" />
       <workItem from="1556803841738" duration="1543000" />
       <workItem from="1556849786116" duration="1172000" />
-      <workItem from="1556898092806" duration="3182000" />
+      <workItem from="1556898092806" duration="3757000" />
+      <workItem from="1556932385642" duration="473000" />
+      <workItem from="1556971538299" duration="4530000" />
     </task>
     <task id="LOCAL-00003" summary="测试">
       <created>1554685906623</created>
@@ -297,11 +358,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556899881212</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完成：五环问题页面">
+      <created>1556901931564</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556901931564</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69359000" />
+    <option name="totallyTimeSpent" value="74937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,19 +385,19 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19459888" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="npm" order="3" sideWeight="0.5013193" side_tool="true" weight="0.20657673" />
+      <window_info id="Structure" order="1" sideWeight="0.5013193" side_tool="true" weight="0.19459888" />
+      <window_info id="Favorites" order="2" sideWeight="0.5013193" side_tool="true" weight="0.19459888" />
+      <window_info id="npm" order="3" sideWeight="0.5013193" side_tool="true" weight="0.19459888" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49007148" weight="0.21450777" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4892772" visible="true" weight="0.21450777" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996986" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49086577" visible="true" weight="0.3253886" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5099285" side_tool="true" weight="0.21450777" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4892772" weight="0.3253886" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5107228" side_tool="true" visible="true" weight="0.21450777" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50913423" side_tool="true" weight="0.21450777" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -388,7 +456,8 @@
     <MESSAGE value="完善：五环测试的职业选择页" />
     <MESSAGE value="优化：map 内创建函数的问题" />
     <MESSAGE value="更新：五环问卷页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新：五环问卷页面" />
+    <MESSAGE value="完成：五环问题页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成：五环问题页面" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
@@ -493,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/questions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3015">
-          <caret line="201" column="13" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -518,13 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -588,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/models/questions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/accessment/components/TopicTable/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -648,13 +696,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/accessment/models/questions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2895">
+          <caret line="193" column="4" lean-forward="true" selection-start-line="193" selection-start-column="4" selection-end-line="193" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/accessment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="497">
+          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/models/questions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/fiveCircle/models/scopes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>

@@ -22,14 +22,25 @@ class Accessment extends Component {
   }
 
   onChange(questionId, selectedOccupations) {
-    this.props.dispatch({
+
+    const { dispatch } = this.props;
+
+    dispatch({
       type: 'FCQuestions/setChoices',
       payload: { questionId, selectedOccupations },
     });
   }
 
-  onSubmit(e) {
+  onSubmit() {
 
+    const { dispatch, occupations, questions, selects } = this.props;
+
+    dispatch({
+      type: 'FCScopes/calculate',
+      payload: { occupations, questions, selects },
+    });
+
+    router.push('/fiveCircle/result')
   }
 
   render() {
@@ -54,7 +65,7 @@ class Accessment extends Component {
           style={{ padding: '10px', textAlign: 'left' }}
         />
 
-        <Button type="primary" onClick={this.onSubmit.bind(this)} style={{ margin: '40px' }}>
+        <Button type="primary" style={{ margin: '40px' }} onClick={this.onSubmit.bind(this)}>
           提交报告 生成测试结果
         </Button>
 
