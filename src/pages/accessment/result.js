@@ -1,9 +1,14 @@
-import { connect } from 'dva';
+import {jStat} from 'jStat';
+
 import React, { Component } from 'react';
+import { connect } from 'dva';
+import { Button, Col, Drawer, Row } from 'antd';
+
+
 import TopHeader from '../../components/TopHeader';
 import TopicTable from './components/TopicTable';
 import TalentTable from './components/TalentTable';
-import { Button, Col, Drawer, Row } from 'antd';
+import TopicBar from './components/TopicBar';
 
 
 class Result extends Component {
@@ -12,7 +17,10 @@ class Result extends Component {
     super(props);
     this.state = {
       scope_list_visible: false,
+      topic_scopes_data: this.categoryAndSort(),
+      talent_scopes_list: this.scopeListData(),
     };
+    this.state.topic_aggregation_data = this.topicBarData();
   }
 
   categoryAndSort() {
@@ -20,61 +28,60 @@ class Result extends Component {
 
     const { scopes, belong, talents, first_10_scope, first_500_scope } = this.props;
 
-    let categories = [[], [], [], []];
+    const reducer = (categories, scope, idx) => {
 
-    for (let i in scopes) {
+      categories[belong[idx]].push({
+        talent: talents[idx],
+        scope: scope,
+        color: scope < 1000 ? 'lime' : null,
+        is_first_10th: scope >= first_10_scope,
+        is_first_500: scope >= first_500_scope,
+      });
 
-      let topic_idx = belong[i];
+      return categories
+    };
 
-      categories[topic_idx].push({
-        talent: talents[i],
-        scope: scopes[i],
-        color: scopes[i] < 1000 ? 'lime' : null,
-        is_first_10th: scopes[i] >= first_10_scope,
-        is_first_500: scopes[i] >= first_500_scope,
-      })
-
-    }
-
-    return categories
+    return scopes.reduce(reducer, [[], [], [], []]);
 
   }
 
   scopeListData() {
     const { scopes, topic, belong, talents, first_10_scope, first_500_scope } = this.props;
 
-    let scope_list = [];
+    const mapper = (value, idx) => ({
+      talent: talents[idx],
+      scope: value,
+      color: value < 1000 ? 'lime' : null,
+      is_first_10th: value >= first_10_scope,
+      is_first_500: value >= first_500_scope,
+      belong: belong[idx],
+      topic: topic[belong[idx]][0],
+    });
 
-    for (let i in scopes) {
-
-      let topic_idx = belong[i];
-
-      scope_list.push({
-        talent: talents[i],
-        scope: scopes[i],
-        color: scopes[i] < 1000 ? 'lime' : null,
-        is_first_10th: scopes[i] >= first_10_scope,
-        is_first_500: scopes[i] >= first_500_scope,
-        belong: topic_idx,
-        topic: topic[topic_idx][0]
-      })
-
-    }
-
-    return scope_list
+    return scopes.map(mapper);
   }
 
-  scopeListDrawerClose() {
-    this.setState({scope_list_visible: false})
-  }
+  topicBarData() {
 
-  scopeListDrawerShow() {
-    this.setState({scope_list_visible: true})
+    const {topic} = this.props;
+    const {topic_scopes_data} = this.state;
+
+    const mapper = (talent_list, idx) => {
+      const scopes = talent_list.map(value => value.scope);
+      return {
+        topic: topic[idx][0],
+        stdev: Math.round(jStat.stdev(scopes)),
+        avg: Math.round(jStat.mean(scopes)),
+      }
+    };
+
+    return topic_scopes_data.map(mapper);
   }
 
   render() {
 
     const { topic } = this.props;
+    const { topic_scopes_data, talent_scopes_list, topic_aggregation_data } = this.state;
 
     return (
       <TopHeader
@@ -82,16 +89,31 @@ class Result extends Component {
         subTitle="v.1.3.0"
         extra={
           <Button
-            onClick={this.scopeListDrawerShow.bind(this)}
+            onClick={()=>this.setState({scope_list_visible: true})}
             shape="circle"
             icon="ordered-list"
             size="small"
           />
         }
       >
+
+        <Drawer
+          title="天赋分数 列表"
+          placement="right"
+          width={360}
+          onClose={()=>this.setState({scope_list_visible: false})}
+          visible={this.state.scope_list_visible}
+        >
+          <TalentTable data={talent_scopes_list}/>
+        </Drawer>
+
+        <Row>
+          <TopicBar data={topic_aggregation_data} />
+        </Row>
+
         <Row gutter={2} style={{ 'padding': '5px' }}>
           {
-            this.categoryAndSort().map((value, index) => (
+            topic_scopes_data.map((value, index) => (
               <Col key={index} xs={24} lg={6} style={{ marginTop: '50px' }}>
                 <TopicTable
                   data={value}
@@ -102,17 +124,6 @@ class Result extends Component {
             ))
           }
         </Row>
-        <Drawer
-          title="天赋分数 列表"
-          placement="right"
-          width={360}
-          onClose={this.scopeListDrawerClose.bind(this)}
-          visible={this.state.scope_list_visible}
-        >
-
-          <TalentTable data={this.scopeListData()}/>
-
-        </Drawer>
       </TopHeader>
     );
   }
