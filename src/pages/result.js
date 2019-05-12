@@ -5,7 +5,7 @@ import { connect } from 'dva';
 import { Button, Col, Drawer, Row } from 'antd';
 
 
-import TopHeader from '../../components/TopHeader';
+import TopHeader from '@/components/TopHeader';
 import TopicTable from './components/TopicTable';
 import TalentTable from './components/TalentTable';
 import TopicBar from './components/TopicBar';
