@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0bf7c3e-cb2d-40a2-9cec-cc0b27c497da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="f0bf7c3e-cb2d-40a2-9cec-cc0b27c497da" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -38,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+            <state relative-caret-position="240">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -265,7 +261,7 @@
       <workItem from="1557021983559" duration="5478000" />
       <workItem from="1557108077038" duration="6839000" />
       <workItem from="1557804234901" duration="51000" />
-      <workItem from="1557804298674" duration="354000" />
+      <workItem from="1557804298674" duration="451000" />
     </task>
     <task id="LOCAL-00003" summary="测试">
       <created>1554685906623</created>
@@ -351,11 +347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557620849331</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="修改：取消优势测试的随机顺序">
+      <created>1557804734224</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1557804734224</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90722000" />
+    <option name="totallyTimeSpent" value="90819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,8 +371,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.23565324" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.23565324" />
       <window_info id="Structure" order="1" sideWeight="0.5013193" side_tool="true" weight="0.19459888" />
       <window_info id="Favorites" order="2" sideWeight="0.5013193" side_tool="true" weight="0.19459888" />
       <window_info id="npm" order="3" sideWeight="0.5013193" side_tool="true" weight="0.19459888" />
@@ -381,9 +385,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996986" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48657188" weight="0.3253886" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.51476794" side_tool="true" visible="true" weight="0.284492" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5123568" side_tool="true" weight="0.284492" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4859585" visible="true" weight="0.32513368" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.51404154" side_tool="true" visible="true" weight="0.32513368" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51404154" side_tool="true" weight="0.32513368" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="make" />
@@ -445,7 +449,8 @@
     <MESSAGE value="完成：五环问题页面" />
     <MESSAGE value="新增：五环测试结果" />
     <MESSAGE value="修改：删减 五环测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改：删减 五环测试" />
+    <MESSAGE value="修改：取消优势测试的随机顺序" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改：取消优势测试的随机顺序" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/TopHeader/index.css">
@@ -634,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
