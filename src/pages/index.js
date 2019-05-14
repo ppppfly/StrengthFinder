@@ -7,7 +7,7 @@ import style from './index.css';
 
 import Form from './components/Form';
 import TopHeader from '@/components/TopHeader';
-import {random_arr} from '@/lib/utils';
+// import {random_arr} from '@/lib/utils';
 
 const { Title, Paragraph  } = Typography;
 
@@ -18,7 +18,8 @@ class Accessment extends Component {
     this.state = {
       visible: false,
       scope_list: [],
-      random_questions: random_arr([...props.questions]),
+      // random_questions: random_arr([...props.questions]),
+      random_questions: [...props.questions],
     };
   }
 

@@ -7,7 +7,8 @@
     "build": "umi build",
     "test": "umi test",
     "lint": "eslint --ext .js src mock tests",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "deploy": "umi build; now -n strength_finder ./dist; rm -rf ./dist"
   },
   "dependencies": {
     "antd": "^3.16.6",
