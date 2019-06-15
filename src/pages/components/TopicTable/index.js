@@ -1,5 +1,6 @@
 import styles from './index.css';
-import { Table, Typography, Tag, Icon, Tooltip, Popover, List } from 'antd';
+import { Table, Typography, Tag, Icon, Tooltip, List } from 'antd';
+import PopoverTalent from '../PopoverTalent';
 
 const { Title, Paragraph } = Typography;
 
@@ -42,11 +43,7 @@ export default function({data, title, desc}) {
     title: '天赋',
     dataIndex: 'talent',
     key: 'talent',
-    render: (talent, record, idx) => (
-      <Popover trigger='click' content={talent_desc(record.desc)}>
-        <span className={styles.talent_name}>{talent}</span>
-      </Popover>
-    ),
+    render: (talent, record, idx) => <PopoverTalent talent={talent} description={record.desc}/>,
   }, {
     title: '分数',
     dataIndex: 'scope',

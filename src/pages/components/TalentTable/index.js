@@ -1,4 +1,5 @@
 import { Icon, Table, Tag, Tooltip } from 'antd';
+import PopoverTalent from '@/pages/components/PopoverTalent';
 
 
 export default function({data}) {
@@ -22,6 +23,7 @@ export default function({data}) {
       title: '天赋',
       dataIndex: 'talent',
       key: 'talent',
+      render: (talent, record, idx) => <PopoverTalent talent={talent} description={record.desc}/>,
     },
     {
       title: '分数',

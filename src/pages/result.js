@@ -58,6 +58,7 @@ class Result extends Component {
       is_first_500: value >= first_500_scope,
       belong: belong[idx],
       topic: topic[belong[idx]][0],
+      desc: talent_desc[idx],  // 获得天赋的说明内容
     });
 
     return scopes.map(mapper);

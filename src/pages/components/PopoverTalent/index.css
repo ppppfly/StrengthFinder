@@ -1,0 +1,16 @@
+.container {
+
+}
+
+.job_title {
+  font-size: 12px;
+  color: silver;
+}
+
+.desc_container {
+  max-width: 800px;
+}
+
+.talent_name {
+  cursor: help;
+}
