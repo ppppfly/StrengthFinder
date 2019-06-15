@@ -9,6 +9,9 @@ export default function({data, title, desc}) {
     title: '天赋',
     dataIndex: 'talent',
     key: 'talent',
+    render: (talent, record, idx) => {
+      return <span>talent</span>
+    },
   }, {
     title: '分数',
     dataIndex: 'scope',

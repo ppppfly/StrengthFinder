@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import { connect } from 'dva';
 import { Button, Col, Drawer, Row } from 'antd';
 
+import talent_desc from '@/lib/talents';
+
 
 import TopHeader from '@/components/TopHeader';
 import TopicTable from './components/TopicTable';
@@ -24,7 +26,6 @@ class Result extends Component {
   }
 
   categoryAndSort() {
-    // 找出前 10 项优势
 
     const { scopes, belong, talents, first_10_scope, first_500_scope } = this.props;
 
@@ -34,8 +35,9 @@ class Result extends Component {
         talent: talents[idx],
         scope: scope,
         color: scope < 1000 ? 'lime' : null,
-        is_first_10th: scope >= first_10_scope,
-        is_first_500: scope >= first_500_scope,
+        is_first_10th: scope >= first_10_scope,  // 找出前 10 项优势
+        is_first_500: scope >= first_500_scope,  // 找出前 500 分优势
+        desc: talent_desc[idx],  // 获得天赋的说明内容
       });
 
       return categories
