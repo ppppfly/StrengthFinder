@@ -4,6 +4,11 @@
  */
 
 module.exports = {
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[contenthash].js',
+    publicPath: './' // 设置为相对路径
+  },
   resolve: {
     alias: {
       '@': require('path').resolve(__dirname, 'src'),

@@ -1,0 +1,7 @@
+services:
+  strength_finder:
+    build: .
+    container_name: strength_finder
+    image: mbrs-docker.pkg.coding.net/www/www/strength_finder:1.5.2
+    ports:
+      - "8080:80"

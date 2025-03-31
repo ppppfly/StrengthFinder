@@ -3,12 +3,12 @@
   "version": "1.5.2",
   "private": true,
   "scripts": {
-    "start": "umi dev",
-    "build": "umi build",
-    "test": "umi test",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider umi dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider umi build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider umi test",
     "lint": "eslint --ext .js src mock tests",
     "precommit": "lint-staged",
-    "deploy": "umi build; now -n strength_finder docs; rm -rf docs"
+    "deploy": "NODE_OPTIONS=--openssl-legacy-provider umi build; now -n strength_finder docs; rm -rf docs"
   },
   "dependencies": {
     "antd": "^3.16.6",
@@ -46,5 +46,6 @@
   },
   "engines": {
     "node": ">=8.0.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

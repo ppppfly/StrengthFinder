@@ -63,7 +63,6 @@ export default {
           talents
             .filter(value => value[1] === 1)
             .map(oneSideAdd(scope_list, select));
-
         }
 
       }
